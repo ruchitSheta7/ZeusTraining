@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+  font-family: "Quicksand", sans-serif;
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 700;
+}
+
+.navbar {
+  height: 9vh;
+  color: rgb(37, 49, 63);
+}
+.navbar .header {
+  background-image: linear-gradient( rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
+   height: 9vh; 
+  width: 100vw;
+}
+
+.content {
+  height: 56.98rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line {
+  width: 40rem;
+  height: 0.5rem;
+  background-color: #3AC7EC;
+}
+
+.form {
+  width: 40rem;
+  background-color: white;
+}
+.form .upper {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding-left: 1.6rem;
+}
+.form .upper .img {
+  height: 2.2rem;
+  width: 2.6rem;
+}
+.form .upper p {
+  margin-left: 6rem;
+  font-size: 2rem;
+}
+.form .radio {
+  display: flex;
+  align-items: center;
+}
+.form .radio .first {
+  display: flex;
+  align-items: center;
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+  gap: 0.7rem;
+}
+.form .middle {
+  margin-left: 2rem;
+  width: 36rem;
+}
+.form .middle .first {
+  border-bottom: #222222 1px solid;
+  margin-bottom: 3rem;
+}
+.form .middle .first .info {
+  margin: 0rem;
+  color: #666666;
+}
+.form .middle .first .input {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.form .middle .first .input p {
+  margin: 0rem;
+}
+.form .middle .first .input img {
+  margin-left: auto;
+}
+.form .middle .second {
+  margin-top: 5rem;
+}
+.form .middle > div:nth-child(4) {
+  margin-top: 3rem;
+}
+.form .middle .second .userDetails {
+  display: flex;
+  align-items: center;
+  border-bottom: #222222 1px solid;
+}
+.form .middle .second .userDetails p {
+  font-size: 1.5rem;
+  margin: 0rem;
+  color: #666666;
+}
+.form .middle .second .forget {
+  color: #222222;
+  display: flex;
+  justify-content: end;
+}
+.form .middle .second .forget p {
+  margin: 0.5rem;
+  color: #1f7a54;
+}
+.form .middle .second .preview {
+  margin-left: auto;
+  height: 2rem;
+  width: 2.2rem;
+}
+.form .last .remember {
+  display: flex;
+  align-items: center;
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+}
+.form .last .remember img {
+  height: 2rem;
+  width: 2rem;
+}
+.form .last .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.form .last .btn button {
+  background-color: #3fd28b;
+  border-radius: 5px;
+  color: black;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.2);
+
+  transform: scale(1.1);
+}
+
+.footer {
+  margin-top: auto;
+}
+.footer .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #1f7a54;
+}
+.footer .about .pipe {
+  color: black;
+}
+.footer .copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1607843137);
+  font-size: 1.2rem;
+  height: 3rem;
+}
+.footer .copy .company {
+  font-weight: bold;
+}/*# sourceMappingURL=Login.css.map */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eee;
+    border: 2px solid red;
+}
+
+.box {
+    width: 53%;
+    height: 85%;
+    background-color: white;
+    border: 2px solid green;
+}
+
+.box__header {
+    height: 8%;
+    background-image: linear-gradient(rgba(1, 24, 50, 0.7), rgba(1, 24, 50, 0.7)), url("quantum screen assets/header pattern image.png");
+    background-size: cover;
+}
+
+.box__body {
+    width: 100%;
+    height: 78%;
+    border: 1px solid red;
+}
+
+.container {
+    width: 50%;
+    height: 92%;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 3px solid yellow;
+    border-radius: 4px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.form .container__head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form .container__head>img {
+    align-self: flex-start;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.form .container__head > p {
+    font-size: 1.8rem;
+    margin-top: -2.2rem;
+}
+
+.form .radio-list {
+    display: flex;
+    gap: 3rem;
+}
+.form .radio-item {
+    display: flex;
+    gap: 0.5rem;
+}
+.form .radio-item > img {
+    height: 2rem;
+    width: 2rem;
+}
+.form .radio-item > p {
+    margin-top: 0.1rem;
+    font-size: 1.3rem;
+}
+
+
+.form .container__body .info {
+    margin: 0.5 rem;
+    color: #666666;
+    
+}
+.form .box__footer {
+    height: 14%;
+    width: 100%;
+    border: 1px solid blue;
+} */
