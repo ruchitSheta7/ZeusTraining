@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-
 body {
   margin: 0px;
   padding: 0px;
@@ -17,13 +16,12 @@ html {
   height: 9vh;
   color: rgb(37, 49, 63);
 }
-
 .navbar .header {
-  background-image: linear-gradient( rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
-  height: 9vh; 
+  background-image: linear-gradient(rgba(1, 41, 31, 0.75), rgba(1, 41, 31, 0.75)), url("quantum screen assets/header pattern image.png");
+  height: 9vh;
   width: 100vw;
 }
-.navbar .header >img{
+.navbar .header img {
   height: 70%;
   width: 15rem;
   margin-left: 3rem;
@@ -73,75 +71,92 @@ html {
   font-size: 1.5rem;
   gap: 0.7rem;
 }
+
 .form .middle {
   margin-left: 2rem;
   width: 36rem;
 }
+
 .form .middle .first {
   border-bottom: #222222 1px solid;
   margin-bottom: 3rem;
 }
+
 .form .middle .first .info {
   margin: 0rem;
   color: #666666;
 }
+
 .form .middle .first .input {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
 }
+
 .form .middle .first .input p {
   margin: 0rem;
 }
+
 .form .middle .first .input img {
   margin-left: auto;
 }
+
 .form .middle .second {
   margin-top: 5rem;
 }
+
 .form .middle > div:nth-child(4) {
   margin-top: 3rem;
 }
+
 .form .middle .second .userDetails {
   display: flex;
   align-items: center;
   border-bottom: #222222 1px solid;
 }
+
 .form .middle .second .userDetails p {
   font-size: 1.5rem;
   margin: 0rem;
   color: #666666;
 }
+
 .form .middle .second .forget {
   color: #222222;
   display: flex;
   justify-content: end;
 }
+
 .form .middle .second .forget p {
   margin: 0.5rem;
   color: #1f7a54;
 }
+
 .form .middle .second .preview {
   margin-left: auto;
   height: 2rem;
   width: 2.2rem;
 }
+
 .form .last .remember {
   display: flex;
   align-items: center;
   margin-left: 1.6rem;
   font-size: 1.5rem;
 }
+
 .form .last .remember img {
   height: 2rem;
   width: 2rem;
 }
+
 .form .last .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
 }
+
 .form .last .btn button {
   background-color: #3fd28b;
   border-radius: 5px;
@@ -152,13 +167,13 @@ html {
   outline: none;
   border: none;
   box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.2);
-
   transform: scale(1.1);
 }
 
 .footer {
   margin-top: auto;
 }
+
 .footer .about {
   display: flex;
   align-items: center;
@@ -166,9 +181,11 @@ html {
   font-size: 1.4rem;
   color: #1f7a54;
 }
+
 .footer .about .pipe {
   color: black;
 }
+
 .footer .copy {
   display: flex;
   align-items: center;
@@ -177,6 +194,7 @@ html {
   font-size: 1.2rem;
   height: 3rem;
 }
+
 .footer .copy .company {
   font-weight: bold;
-}
+}/*# sourceMappingURL=style.css.map */

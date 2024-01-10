@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+    font-family: "Quicksand", sans-serif;
+    width: 100vw;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 700;
+}
+
+.navbar {
+    height: 9vh;
+    color: rgb(37, 49, 63);
+
+    .header {
+        background-image: linear-gradient(rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
+        height: 9vh;
+        width: 100vw;
+
+        img {
+            height: 70%;
+            width: 15rem;
+            margin-left: 3rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+.content {
+    height: 56.98rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 40rem;
+    height: 0.5rem;
+    background-color: #3AC7EC;
+}
+
+.form {
+    width: 40rem;
+    background-color: white;
+
+    .upper {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        padding-left: 1.6rem;
+
+        .img {
+            height: 2.2rem;
+            width: 2.6rem;
+        }
+
+        p {
+            margin-left: 6rem;
+            font-size: 2rem;
+        }
+
+    }
+
+    .radio {
+        display: flex;
+        align-items: center;
+
+        .first {
+            display: flex;
+            align-items: center;
+            margin-left: 1.6rem;
+            font-size: 1.5rem;
+            gap: 0.7rem;
+        }
+    }
+
+    .middle {
+        margin-left: 2rem;
+        width: 36rem;
+
+        div:nth-child(4) {
+            margin-top: 3rem;
+        }
+
+        .first {
+            border-bottom: #222222 1px solid;
+            margin-bottom: 3rem;
+
+            .info {
+                margin: 0rem;
+                color: #666666;
+            }
+
+            .input {
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+
+                p {
+                    margin: 0rem;
+                }
+
+                img {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .second {
+            margin-top: 5rem;
+
+            .userDetails {
+                display: flex;
+                align-items: center;
+                border-bottom: #222222 1px solid;
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 0rem;
+                    color: #666666;
+                }
+            }
+
+            .forget {
+                color: #222222;
+                display: flex;
+                justify-content: end;
+
+                p {
+                    margin: 0.5rem;
+                    color: #1f7a54;
+                }
+
+            }
+
+            .preview {
+                margin-left: auto;
+                height: 2rem;
+                width: 2.2rem;
+            }
+        }
+    }
+
+    .last {
+        .remember {
+            display: flex;
+            align-items: center;
+            margin-left: 1.6rem;
+            font-size: 1.5rem;
+
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            button {
+                background-color: #3fd28b;
+                border-radius: 5px;
+                color: black;
+                width: 15rem;
+                height: 3rem;
+                font-size: 1.3rem;
+                outline: none;
+                border: none;
+                box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.2);
+
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
+
+
+
+
+.footer {
+    margin-top: auto;
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: #1f7a54;
+
+        .pipe {
+            color: black;
+        }
+    }
+
+    .copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.1607843137);
+        font-size: 1.2rem;
+        height: 3rem;
+
+        .company {
+            font-weight: bold;
+        }
+    }
+}

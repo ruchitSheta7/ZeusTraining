@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  color: rgb(37, 49, 63);
+
+  .header {
+    height: 9vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
+
+    img {
+      height: 70%;
+      width: 15rem;
+      margin-left: 3rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .nav_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+
+    ul {
+      list-style: none;
+      padding: 2rem;
+      display: flex;
+
+      li,
+      img {
+        display: flex;
+        margin-left: 3rem;
+        font-size: 1.2rem;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          color: #3FD28B;
+          margin-top: 0.5rem;
+
+          &:hover {
+            text-decoration: none;
+            color: white;
+          }
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 0.3rem;
+            background-color: white;
+            display: block;
+          }
+
+          &:hover::after {
+            width: 100%;
+            margin-bottom: -2rem;
+            margin-top: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  height: 56.98rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+
+  .content__head {
+    width: 95%;
+    margin: 2rem;
+    margin-top: 4rem;
+
+    .course-bar {
+      display: flex;
+      flex-direction: row;
+      justify-items: space-around;
+      align-items: space-around;
+
+      .courses {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        background-color: #8DDC97;
+        font-size: 1.5rem;
+      }
+
+      div {
+        img {
+          width: 2.4rem;
+        }
+
+        &:nth-child(1) {
+          border-bottom: 0.4rem solid #0f3f2b;
+        }
+      }
+    }
+
+    .info-bar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 4rem;
+      margin-top: 1rem;
+      border-bottom: 1px solid #68686840;
+      color: #686868;
+
+      .info {
+        margin-left: 0.2rem;
+      }
+
+      .sort_by {
+        margin-left: auto;
+        margin-right: 0.5rem;
+      }
+
+      .sort_by--category {
+        display: flex;
+        justify-content: space-between;
+        width: 15rem;
+        height: 3.7rem;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+        margin-top: -1.3rem;
+        color: #333333;
+        border-bottom: 1px solid #68686840;
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        img {
+          width: 2.5rem;
+          margin-top: 1rem;
+        }
+      }
+
+      img {
+        width: 1.3rem;
+      }
+    }
+  }
+
+  .content__body {
+    height: 42rem;
+    width: 97.5%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: #eeeeee;
+
+    .card {
+      width: 95.5%;
+      height: 95%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 77% 23%;
+      background-color: white;
+
+      .card_img {
+        grid-column: 1/2;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 10rem;
+          height: 12rem;
+          margin-left: 2.5rem;
+        }
+      }
+
+      .card_info {
+        grid-column: 2/-1;
+        padding-left: 1.2rem;
+
+        .course_name {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          margin-bottom: -0.7rem;
+          font-size: 1.4rem;
+
+          p {
+            margin-right: auto;
+            color: #333333;
+          }
+
+          img {
+            width: 2rem;
+            margin-right: 1rem;
+          }
+        }
+
+        .course_subject {
+          color: #686868;
+
+          span {
+            color: #1F7A54;
+          }
+        }
+
+        .course_length {
+          margin-top: 0.5rem;
+
+          span {
+            color: #686868;
+          }
+        }
+
+        .course_class {
+          display: flex;
+          justify-content: space-between;
+          width: 91%;
+          height: 3.7rem;
+          margin-top: -0.4rem;
+          color: #333333;
+          border-bottom: 1.5px solid #686868be;
+
+          p {
+            font-size: 1.4rem;
+          }
+
+          img {
+            width: 2.3rem;
+            margin-top: 1rem;
+            margin-right: -0.6rem;
+          }
+        }
+
+        .course_enroll_info {
+          margin-top: 0.8rem;
+          color: #686868;
+        }
+      }
+
+      .card_footer {
+        grid-column: 1/-1;
+        display: inline-flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        border-top: 2px solid #68686834;
+        margin: 0 1.5rem 0 2.4rem;
+        padding-top: 1.2rem;
+        margin-bottom: 0.8rem;
+
+        img {
+          width: 2rem;
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            width: 1.6rem;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+.footer {
+  margin-top: auto;
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #1f7a54;
+
+    .pipe {
+      color: black;
+    }
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1607843137);
+    font-size: 1.2rem;
+    height: 3rem;
+
+    .company {
+      font-weight: bold;
+    }
+  }
+}
