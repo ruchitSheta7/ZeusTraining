@@ -10,6 +10,21 @@ body {
   font-weight: 700;
 }
 
+@mixin notification($bgcolor, $color, $topval, $rightval) {
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: $bgcolor;
+  color: $color;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: $topval;
+  right: $rightval;
+  font-size: 1.2rem;
+}
+
 html {
   font-size: 62.5%;
   font-weight: 700;
@@ -19,13 +34,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
+  height: 6rem;
+  width: 100%;
   color: rgb(37, 49, 63);
+  background-image: linear-gradient(rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
 
   .header {
-    height: 9vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(1, 41, 31, 0.750), rgba(1, 41, 31, 0.750)), url("quantum screen assets/header pattern image.png");
+    height: 8rem;
+    display: inline-block;
 
     img {
       height: 70%;
@@ -38,48 +54,320 @@ html {
   .nav_menu {
     position: absolute;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     width: 100%;
 
-    ul {
+    .menu {
       list-style: none;
-      padding: 2rem;
+      padding: 2.5rem 22rem 0rem 0rem;
       display: flex;
+      position: absolute;
 
-      li,
-      img {
+      .menu_blocks {
         display: flex;
-        margin-left: 3rem;
-        font-size: 1.2rem;
-      }
+        flex-direction: column;
 
-      li {
-        a {
-          text-decoration: none;
-          color: #3FD28B;
-          margin-top: 0.5rem;
+        .courseCatagory {
+          display: none !important;
+        }
 
-          &:hover {
-            text-decoration: none;
-            color: white;
+        .menu_item {
+          display: flex;
+          height: 6rem;
+
+          li {
+            display: inline-block;
+            margin-left: 3rem;
+            font-size: 1.4rem;
+
+            a {
+              text-decoration: none;
+              color: #3FD28B;
+              margin-top: 0.5rem;
+
+              &:hover {
+                text-decoration: none;
+                color: white;
+              }
+
+              &::after {
+                content: '';
+                width: 0;
+                height: 0.3rem;
+                background-color: white;
+                display: block;
+              }
+
+              &:hover::after {
+                width: 100%;
+                margin-bottom: -2rem;
+                margin-top: 1.5rem;
+              }
+            }
           }
 
-          &::after {
-            content: '';
-            width: 0;
-            height: 0.3rem;
-            background-color: white;
-            display: block;
+          .ig {
+            display: none;
           }
 
-          &:hover::after {
-            width: 100%;
-            margin-bottom: -2rem;
-            margin-top: 1.5rem;
-          }
         }
       }
     }
+
+    .nav_icons {
+      display: flex;
+      margin-right: 1.5rem;
+      margin-top: 0.8rem;
+      align-items: center;
+
+      .alert_div {
+
+        height: 4rem;
+
+        .alert_notification {
+          @include notification(#2A7FF3, #ffffff, -4rem, -1.6rem);
+        }
+
+
+        .alert_icon {
+          width: 3rem;
+
+        }
+      }
+
+      .alert_dropdown {
+        display: none;
+        position: absolute;
+        top: 6.9rem;
+        right: 14rem;
+        width: 22rem;
+        height: 30rem;
+        background-color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden; 
+        transition: all 0.5s ease-in-out;
+
+
+        .alerts {
+          height: 87%; 
+          overflow-y: auto; 
+          &::-webkit-scrollbar {
+            width: 3px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #979797;
+          }
+
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+
+          .alertdata {
+            background-color: #FFFFEE;
+            padding: 1rem;
+
+            .alertflex {
+              font-size: 1rem;
+              display: flex;
+
+              .alertimage {
+                height: 1rem;
+                width: 1rem;
+                margin-left: auto;
+                margin-top: 0.2rem;
+              }
+            }
+
+            .alertcourse {
+              font-size: 0.8rem;
+              margin: 0.4rem 0 0.4rem 0;
+
+              span {
+                color: #6E6E6E;
+              }
+            }
+
+            .alertdate {
+              font-size: 0.7rem;
+              color: #6E6E6E;
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+
+
+        .alertbutton {
+          top: 32.5rem;
+          height: 2rem;
+          width: 22rem;
+          text-align: center;
+          padding: 1.2rem 0 0.8rem 0;
+          background-color: #FFFFFF;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 3px 10px;
+          color: #1F7A54;
+          font-size: 1.2rem;
+        }
+      }
+
+
+
+      .announcement_div {
+        margin-left: 3rem;
+
+        .announcement_notification {
+          @include notification(#2A7FF3, #ffffff, -3.6rem, -1.6rem);
+
+        }
+
+        .announcement_icon {
+          margin-top: 0.9rem;
+          width: 2.5rem;
+        }
+      }
+
+      .announcement_dropdown {
+        display: none;
+        position: absolute;
+        top: 6.9rem;
+        right: 8rem;
+        width: 20rem;
+        height: 30rem;
+        background-color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden; 
+
+        transition: all 0.5s ease-in-out;
+
+        .announcements {
+          height: 91%; 
+          overflow-y: auto; 
+
+          &::-webkit-scrollbar {
+            width: 3px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #979797;
+          }
+
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+
+          .announcementdata {
+            background-color: #FFFFEE;
+            padding: 1rem;
+
+            .announcementflex {
+              font-size: 0.8rem;
+              display: flex;
+
+              .announcementname {
+                span {
+                  color: #6E6E6E;
+                }
+              }
+
+              .announcementimage {
+                height: 1rem;
+                width: 1rem;
+                margin-left: auto;
+                margin-top: 0.2rem;
+              }
+            }
+
+            .announcementcontent {
+              font-size: 1rem;
+              padding-right: 1.2rem;
+            }
+
+            .announcementcourse {
+              font-size: 0.8rem;
+              margin: 0.4rem 0 0.4rem 0;
+
+              span {
+                color: #6E6E6E;
+              }
+            }
+
+            .filedate {
+              display: flex;
+              align-items: center;
+
+              .file {
+                font-size: 0.7rem;
+
+                img {
+                  width: 0.7rem;
+                  height: 0.7rem;
+                }
+              }
+
+              .announcementdate {
+                font-size: 0.7rem;
+                color: #6E6E6E;
+                margin-left: auto;
+              }
+            }
+
+          }
+        }
+
+
+        .button {
+          width: 20rem;
+          padding: 0.8rem 0 0.8rem 0;
+          display: flex;
+          background-color: #FFFFFF;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          color: #1F7A54;
+          font-size: 0.9rem;
+
+          .showallbutton {
+            width: 50%;
+            border-right: 0.5px solid #0000001F;
+            text-align: center;
+          }
+
+          .createnewbutton {
+            width: 50%;
+            text-align: center;
+          }
+        }
+      }
+
+      .account_div {
+        margin-left: 3rem;
+
+        .white_notification_count {
+          @include notification(#ffffff, #333333, -4.4rem, -2rem);
+        }
+
+        .account_icon {
+          margin-top: 1rem;
+          width: 3.6rem;
+        }
+      }
+
+
+      a>.hamburger {
+        display: none;
+        margin-left: 3rem;
+        width: 3.6rem;
+      }
+    }
+
+
   }
 }
 
@@ -318,3 +606,6 @@ html {
     }
   }
 }
+
+// for 768 X 1024 
+@import "mediaqueries";

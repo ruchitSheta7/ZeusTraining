@@ -11,19 +11,122 @@
 <body>
 
   <nav class="navbar">
-    <div class="header"><img src="quantum screen assets/icons/logo used in header.svg" alt="" /></div>
-    <div class="nav_menu">
-      <ul>
-        <li><a href="#">DASHBOARD</a></li>
-        <li><a href="#">CONTENT</a></li>
-        <li><a href="#">USERS</a></li>
-        <li><a href="#">REPORTS</a></li>
-        <li><a href="#">ADMIN</a></li>
-        <img src="quantum screen assets/icons/alerts.svg" alt="">
-        <img src="quantum screen assets/icons/announcements.svg" alt="">
-        <img src="quantum screen assets/icons/account_circle.svg" alt="">
-      </ul>
+    <div class="header">
+      <img src="quantum screen assets/icons/logo used in header.svg" alt="" />
     </div>
+    <div class="nav_menu">
+      <div class="menu">
+
+        <div class="menu_blocks">
+          <div class="menu_item">
+            <li><a href="#">DASHBOARD</a></li>
+            <img src="quantum screen assets/icons/arrow-down.svg" alt="" class="ig" />
+          </div>
+        </div>
+
+        <div class="menu_blocks">
+          <div class="menu_item">
+            <li><a href="#">CONTENT</a></li>
+            <img src="quantum screen assets/icons/arrow-down.svg" alt="" class="ig" />
+          </div>
+          <div class="courseCatagory menu_item">
+            <li><a href="#">COURSE CATAGORY</a></li>
+          </div>
+        </div>
+
+        <div class="menu_blocks">
+          <div class="menu_item">
+            <li><a href="#">USERS</a></li>
+            <img src="quantum screen assets/icons/arrow-down.svg" alt="" class="ig" />
+          </div>
+        </div>
+
+        <div class="menu_blocks">
+          <div class="menu_item">
+            <li><a href="#">REPORTS</a></li>
+            <img src="quantum screen assets/icons/arrow-down.svg" alt="" class="ig" />
+          </div>
+        </div>
+
+        <div class="menu_blocks">
+          <div class="menu_item">
+            <li><a href="#">ADMIN</a></li>
+            <img src="quantum screen assets/icons/arrow-down.svg" alt="" class="ig" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav_icons">
+
+        <div class="alert_div" onclick="alertFunction()">
+          <img class="alert_icon " src="quantum screen assets/icons/alerts.svg" alt="" >
+          <div class="alert_notification" id="alert_notification">2</div>
+        </div>
+        <!--  -->
+        <div class="alert_dropdown" >
+            <div class="alerts">
+                <!-- <div class="alertdata">
+                    <div class="alertflex">
+                      <div class="alertcontent">License for Introduction to Algebra has been assigned to your school
+                      </div> 
+                      <img src="quantum screen assets/icons/dnd.png" alt="" class="alertimage">
+                    </div>
+                    <div class="alertcourse"><span>Course: </span><b>Advanced Mathematics</b></div>
+                    <div class="alertdate">15-Sep-2018 at 07:21 pm</div>
+                </div> -->
+            </div>
+            <div class="alertbutton">SHOW ALL</div>
+        </div>
+        <!--  -->
+
+        <div class="announcement_div" onclick="announcementFunction()">
+          <img class="announcement_icon" src="quantum screen assets/icons/announcements.svg" alt="">
+          <div class="announcement_notification" id="announcement_notification">1</div>
+        </div>
+
+        <div class="announcement_dropdown">
+          <div class="announcements">
+            <!-- <div class="announcementdata">
+              <div class="announcementflex">
+                <div class="announcementname">
+                  <span>PA:</span>&nbsp;Ruchit Sheta
+                </div>
+                <img
+                  src="quantum screen assets/icons/correct.png"
+                  alt=""
+                  class="announcementimage"
+                />
+              </div>
+              <div class="announcementcontent">No class will be held on 21st Nov</div>
+              <div class="announcementcourse">Course: <b>Advanced Mathematics</b> </div>
+              <div class="filedate">
+                <div class="file">
+                   <img src="quantum screen assets/icons/fileAttach.png" alt=""> &nbsp;2 files attached
+                </div>
+                <div class="announcementdate">15-Sep-2018 at 07:21 pm</div>
+              </div>
+            </div> -->
+          </div>
+          <div class="button">
+            <div class="showallbutton">SHOW ALL</div>
+            <div class="createnewbutton">CREATE NEW</div>
+          </div>
+        </div>
+
+
+        <div class="account_div">
+          <img class="account_icon" src="quantum screen assets/icons/account_circle.svg" alt="">
+          <div class="white_notification_count" id="account_notification">1</div>
+        </div>
+
+
+        <a href="javascript:void(0);" onclick="h()"><img src="quantum screen assets/icons/hamburger-menu.svg"
+            class="hamburger" /></a>
+
+      </div>
+    </div>
+
   </nav>
 
 
@@ -41,7 +144,7 @@
           <p>4 classes </p>
         </div>
       </div>
-    
+
       <div class="info-bar">
         <div class="info">Showing 4 of 4 courses</div>
         <div class="sort_by"> Sort By:</div>
@@ -56,7 +159,7 @@
 
 
     <div class="content__body">
-
+      <!-- 
       <div class="card">
         <div class="card_img">
           <img src="quantum screen assets/images/imageMask-1.svg" alt="">
@@ -84,91 +187,8 @@
           <img src="quantum screen assets/icons/reports.svg" alt="">
         </div>
       </div>
+      -->
 
-
-      <div class="card">
-        <div class="card_img">
-          <img src="quantum screen assets/images/imageMask-2.svg" alt="">
-        </div>
-        <div class="card_info">
-          <div class="course_name">
-            <p>Acceleration</p>
-            <img src="quantum screen assets/icons/favourite.svg" alt="">
-          </div>
-          <div class="course_subject">Physics &nbsp;|&nbsp; Grade 7 <span>+2</span>
-          </div>
-          <div class="course_length">
-            4 <span>Units </span>18 <span>Lessons</span> 24 <span>Topics</span>
-          </div>
-          <div class="course_class">
-            <p>Mr. Frank's Class B</p>
-            <img src="quantum screen assets/icons/arrow-down.svg" alt="" />
-          </div>
-          <div class="course_enroll_info">50 students &nbsp; | &nbsp;21-Jan-2020 - 21-Aug-2020</div>
-        </div>
-        <div class="card_footer">
-          <img src="quantum screen assets/icons/preview.svg" alt="">
-          <img src="quantum screen assets/icons/manage course.svg " alt="">
-          <img src="quantum screen assets/icons/grade submissions.svg" alt="">
-          <img src="quantum screen assets/icons/reports.svg" alt="">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_img">
-          <img src="quantum screen assets/images/imageMask.svg" alt="">
-        </div>
-        <div class="card_info">
-          <div class="course_name">
-            <p>Acceleration</p>
-            <img src="quantum screen assets/icons/favourite.svg" alt="">
-          </div>
-          <div class="course_subject">Physics &nbsp;|&nbsp; Grade 7 <span>+2</span>
-          </div>
-          <div class="course_length">
-            4 <span>Units </span>18 <span>Lessons</span> 24 <span>Topics</span>
-          </div>
-          <div class="course_class">
-            <p>Mr. Frank's Class B</p>
-            <img src="quantum screen assets/icons/arrow-down.svg" alt="" />
-          </div>
-          <div class="course_enroll_info">50 students &nbsp; | &nbsp;21-Jan-2020 - 21-Aug-2020</div>
-        </div>
-        <div class="card_footer">
-          <img src="quantum screen assets/icons/preview.svg" alt="">
-          <img src="quantum screen assets/icons/manage course.svg " alt="">
-          <img src="quantum screen assets/icons/grade submissions.svg" alt="">
-          <img src="quantum screen assets/icons/reports.svg" alt="">
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card_img">
-          <img src="quantum screen assets/images/imageMask-3.svg" alt="">
-        </div>
-        <div class="card_info">
-          <div class="course_name">
-            <p>Acceleration</p>
-            <img src="quantum screen assets/icons/favourite.svg" alt="">
-          </div>
-          <div class="course_subject">Physics &nbsp;|&nbsp; Grade 7 <span>+2</span>
-          </div>
-          <div class="course_length">
-            4 <span>Units </span>18 <span>Lessons</span> 24 <span>Topics</span>
-          </div>
-          <div class="course_class">
-            <p>Mr. Frank's Class B</p>
-            <img src="quantum screen assets/icons/arrow-down.svg" alt="" />
-          </div>
-          <div class="course_enroll_info">50 students &nbsp; | &nbsp;21-Jan-2020 - 21-Aug-2020</div>
-        </div>
-        <div class="card_footer">
-          <img src="quantum screen assets/icons/preview.svg" alt="">
-          <img src="quantum screen assets/icons/manage course.svg " alt="">
-          <img src="quantum screen assets/icons/grade submissions.svg" alt="">
-          <img src="quantum screen assets/icons/reports.svg" alt="">
-        </div>
-      </div>
     </div>
 
   </div>
@@ -181,6 +201,7 @@
       copyright © 2020-2021 &nbsp; <span class="company">Zeus system Pvt Ltd.</span> &nbsp;&nbsp;All rights reserved
     </div>
   </div>
-
+  <script src="index.js"></script>
 </body>
+
 </html>

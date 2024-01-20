@@ -1,0 +1,94 @@
+[
+    {
+        "courseName":"Acceleration",
+        "imgUrl":"quantum screen assets/images/imageMask-1.svg",
+        "courseSubject":"Physics",
+        "courseGrade":7,
+        "additionalCourseGrade":2,
+        "courseLength":{
+            "units":4,
+            "lessons":18,
+            "topics":24
+        },
+        "courseClass":"Mr. Frank's Class B",
+        "courseEnrollInfo":{
+            "totalStudents":50,
+            "startingDate":"21-Jan-2020",
+            "endingDate":"21-Aug-2020"
+        },
+        "previewIsActive": true,
+        "manageIsActive": true,
+        "gradeIsActive": true,
+        "reportsIsActive": true,
+        "isExpired": false
+    },
+    {
+        "courseName":"Displacement, Velocity and Speed",
+        "imgUrl":"quantum screen assets/images/imageMask-2.svg",
+        "courseSubject":"Physics 2",
+        "courseGrade":6,
+        "additionalCourseGrade":3,
+        "courseLength":{
+            "units":2,
+            "lessons":15,
+            "topics":20
+        },
+        "courseClass": null,
+        "courseEnrollInfo":{
+            "totalStudents":null,
+            "startingDate":null,
+            "endingDate":null
+        },
+        "previewIsActive": true,
+        "manageIsActive": false,
+        "gradeIsActive": false,
+        "reportsIsActive": true,
+        "isExpired": false
+    },
+    {
+        "courseName":"Introduction to Biology: Micro organisms and how...",
+        "imgUrl":"quantum screen assets/images/imageMask.svg",
+        "courseSubject":"Biology",
+        "courseGrade":4,
+        "additionalCourseGrade":1,
+        "courseLength":{
+            "units":5,
+            "lessons":16,
+            "topics":22
+        },
+        "courseClass":"All Classes",
+        "courseEnrollInfo":{
+            "totalStudents":300,
+            "startingDate":null,
+            "endingDate":null
+        },
+        "previewIsActive": true,
+        "manageIsActive": false,
+        "gradeIsActive": false,
+        "reportsIsActive": true,
+        "isExpired": false
+    },
+    {
+        "courseName":"Introduction to High School Mathematics",
+        "imgUrl":"quantum screen assets/images/imageMask-3.svg",
+        "courseSubject":"Mathematics",
+        "courseGrade":8,
+        "additionalCourseGrade":3,
+        "courseLength":{
+            "units":4,
+            "lessons":18,
+            "topics":24
+        },
+        "courseClass":"Mr. Frank's Class A",
+        "courseEnrollInfo":{
+            "totalStudents":44,
+            "startingDate":"14-Oct-2019",
+            "endingDate":"20-Oct-2020"
+        },
+        "previewIsActive": true,
+        "manageIsActive": true,
+        "gradeIsActive": true,
+        "reportsIsActive": true,
+        "isExpired": true
+    }
+]
